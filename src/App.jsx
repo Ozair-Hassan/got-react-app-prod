@@ -47,7 +47,9 @@ const App = () => {
     console.log(items)
     let tempHoldingArray = []
     items.map((innerObj) => {
-      if (innerObj.fullName.toLowerCase().includes(e.target.value)) {
+      if (
+        innerObj.fullName.toLowerCase().includes(e.target.value.toLowerCase())
+      ) {
         tempHoldingArray.push(innerObj)
       }
     })
