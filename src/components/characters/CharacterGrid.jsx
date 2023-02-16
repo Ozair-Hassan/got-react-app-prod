@@ -19,12 +19,18 @@ const CharacterGrid = ({ items, isLoading }) => {
         <Spinner />
       ) : (
         <section className="cards">
-          {navtiveItems.map((item) => (
-            <CharacterItem
-              key={item.id}
-              item={item}
-            />
-          ))}
+          {navtiveItems.length ? (
+            navtiveItems.map((item) => (
+              <CharacterItem
+                key={item.id}
+                item={item}
+              />
+            ))
+          ) : (
+            <div class="no-results">
+              <p>No results found</p>
+            </div>
+          )}
         </section>
       )}
     </>
