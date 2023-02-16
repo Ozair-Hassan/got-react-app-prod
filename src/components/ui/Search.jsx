@@ -14,7 +14,7 @@ const Search = ({ getQuery, searchText, handleChange }) => {
         <input
           type="text"
           className="form-control"
-          placeholder="Search characters by id"
+          placeholder="Search characters"
           // value={searchText}
           value={text}
           // onChange={(e) => onChange(e.target.value)}
